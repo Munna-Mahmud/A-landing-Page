@@ -6,7 +6,6 @@ main{
     display: flex;
     align-items: center;
     flex-direction: column;
-    /* justify-content: center; */
 }
 .container{
     background-color: white;
@@ -43,6 +42,9 @@ grid-row-gap: 30px;
     margin-left:16px ;
     font-size: 18px;
 }
+
+/* blog sectio start */
+
  .blogs{
      display: grid;
      grid-template-columns: repeat(2, 1fr);
@@ -92,12 +94,16 @@ grid-row-gap: 30px;
     color:rgb(63, 60, 60);
 }.course-duration{
     background-color: burlywood;
-    border-radius: 20%;
+    border-radius: 10%;
+    margin-right: 20px;
 }
 .course-info{
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+span{
+    margin-right: 40px;
 }
 
 /*--------------- ----------------------
@@ -113,6 +119,11 @@ grid-row-gap: 30px;
     .Top-players, .blogs, .courses{
         grid-template-columns: repeat(1, 1fr);
     }
+    .course-info{
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 10px;
+    }
     
 }
 
@@ -124,6 +135,14 @@ grid-row-gap: 30px;
     .Top-players{
         grid-template-columns: repeat(2, 1fr);
     }
-    
+    .fa-star{
+        font-size: 10px;
+    }
+    span{
+        font-size: 10px;
+    }
+    .fa-clock{
+        font-size: 10px;
+    }
 }
 
