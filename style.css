@@ -105,7 +105,23 @@ grid-row-gap: 30px;
 span{
     margin-right: 40px;
 }
-
+.list-section{
+    margin-left: 345px;
+}
+.list-btn{
+    color: white;
+    background-color: rgb(73, 144, 226);
+    font-size: 18px;
+    padding: 8px;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+.list ul li{
+    color: blueviolet;
+    font-size: 24px;
+    margin: 10px;
+    display: inline;
+}
 /*--------------- ----------------------
 --------media quaries section---------- */
 @media only screen and (max-width:688px) {
