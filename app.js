@@ -16,15 +16,14 @@ bgColor.style.backgroundColor = 'rgba(255, 0, 0, 0.2)';
 function updateNumber(isIncreasing,) {
     const btnInput = document.getElementById('input-number');
     const inputNumber = btnInput.value;
-    var btnn = document.getElementsByClassName('.btn');
-
-
+ 
     if (isIncreasing == true) {
         btnInput.value = parseInt(inputNumber) + 1;
-        if (inputNumber.value == 5) {
-            btnn.value.disabled = true;
-        }
+       if(btnInput.value==5){
+         const btnInputText=  document.getElementById('press-btn-plus');
+         btnInputText.setAttribute('disabled', true);
 
+       }
 
     } else if (inputNumber > 0) {
         btnInput.value = parseInt(inputNumber) - 1;
@@ -43,6 +42,11 @@ document.getElementById('press-btn-minus').addEventListener('click', function ()
     updateNumber(false);
 
 })
+
+
+
+
+
 
 //3
 document.getElementById('li-btn').addEventListener('click', function (){
